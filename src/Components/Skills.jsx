@@ -8,6 +8,7 @@ import {
   Icon,
 } from "@chakra-ui/react";
 import React from "react";
+import "./common.css";
 // import {
 //   AiFillHtml5,
 //   BiLogoCss3,
@@ -89,6 +90,10 @@ function Skills() {
                   borderWidth={1.7}
                   borderColor="purpleText.500"
                   borderRadius="10px"
+                  className="skill-box"
+                  _hover={{
+                    bgGradient: "linear(to-l, #7928CA, #FF0080)",
+                  }}
                 >
                   <Text textAlign={"center"} color="white">
                     {skill.title}

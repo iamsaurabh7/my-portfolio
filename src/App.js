@@ -14,10 +14,10 @@ function App() {
             position="sticky"
             left={0}
             top={0}
-            width="250px" // Adjust the width as needed
-            height="100vh" // Make it as tall as the viewport
-            bgColor="bgSecondary.500" // Background color of the sidebar
-            zIndex={100} // Set the z-index to control the stacking order
+            width="250px"
+            height="100vh"
+            bgColor="bgSecondary.500"
+            zIndex={100}
           >
             <Sidebar />
           </Box>

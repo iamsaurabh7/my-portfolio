@@ -21,17 +21,17 @@ const projectsArr = [
   {
     name: "Zomato Clone 🍔",
     url: "https://zomato-clone-sv.netlify.app/",
-    gitHub: "https://github.com/iamsaurabh7/zomato-clone",
+    gitHub: "https://github.com/iamsaurabh7/zomato_clone",
     img: "https://user-images.githubusercontent.com/91486795/283275014-bd598267-c401-4b74-829b-67a5667fcc50.png",
     info: `Experience the delight of food exploration with Zomato Clone`,
     moreInfo: `🌟 Homepage: Discover a world of culinary delights, explore restaurants, and find your favorite cuisines.
-    
+   
     🌟 Search Bar: Effortlessly search for restaurants, cuisines, or specific dishes with a user-friendly search bar.
-    
+  
     🌟 Filters: Refine your search with interactive filters, making it easy to find the perfect dining experience.
-    
+  
     🌟 Explore Sections: Dive into curated lists and collections to discover trending restaurants and cuisines.
-    
+  
     🌟 Responsive Design: Enjoy a seamless experience on both desktop and tablet devices.`,
     tech: ["React.js", "Styled Components", "React Slick", "Netlify Hosting"],
   },
@@ -39,7 +39,7 @@ const projectsArr = [
     name: "JioMart Clone 🛒",
     url: "https://tiny-marigold-47f428.netlify.app/",
     gitHub: "https://github.com/iamsaurabh7/jiomart-clone",
-    img: "https://media.licdn.com/dms/image/D4D22AQFw-wRBiK6Sog/feedshare-shrink_800/0/1694548378418?e=1700092800&v=beta&t=fg_Z5VwGy6VyLnVr9wHorR5OGMOY2AA_lBjEAvpDV-M",
+    img: "https://user-images.githubusercontent.com/91486795/266869840-e925ba2a-7e18-43fb-b50b-b0b3767765d8.png",
     info: `Explore the world of online shopping with my JioMart Clone`,
     moreInfo: `✨ Homepage : Discover featured products, irresistible deals, and seamless navigation to your favorite categories.
  
@@ -56,13 +56,17 @@ const projectsArr = [
     name: "Todo-App",
     url: "https://64ec881970ea1b02a7426156--stellar-mooncake-6f6278.netlify.app/",
     gitHub: "https://github.com/iamsaurabh7/todo",
-    img: "https://media.licdn.com/dms/image/D5622AQFlAQqj9-SnsA/feedshare-shrink_800/0/1693240391483?e=1700092800&v=beta&t=OooI2tkgqOZZlfLw9PzHHTKsAc3k5hv968zOu0CpMrg",
+    img: "https://user-images.githubusercontent.com/91486795/263752745-212bdac1-f081-432e-9597-05976900d2ad.png",
     info: `Manage your tasks effortlessly with the Todo-App!`,
     moreInfo: `It offers these powerful features:
-      - Add new tasks to the database 📥
-      - Toggle tasks as Active / Inactive ⚡
-      - Edit task titles on the go 🖊️
-      - Remove tasks from the list ✖️`,
+
+    📥 Add new tasks to the database 
+
+    ⚡ Toggle tasks as Active / Inactive 
+
+    🖊️ Edit task titles on the go 
+    
+    ✖️ Remove tasks from the list `,
     teck: ["html", "css", "javaScript", "Bootstrap"],
   },
 ];
@@ -86,8 +90,8 @@ function Projects() {
           <Grid
             templateColumns={{
               base: "repeat(1, 1fr)",
-              md: "repeat(3, 1fr)",
-              //   lg: "repeat(3, 1fr)",
+              md: "repeat(2, 1fr)",
+              lg: "repeat(3, 1fr)",
             }}
             gap={{ base: "0", md: "10" }}
           >
@@ -98,6 +102,7 @@ function Projects() {
                 m={2}
                 p={4}
                 borderRadius={"10px"}
+                key={project.name}
               >
                 <VStack>
                   <Image src={project.img} />
@@ -148,19 +153,15 @@ function Projects() {
                       <PopoverContent>
                         <PopoverArrow />
                         <PopoverCloseButton color="black" />
-                        <PopoverBody color="black">
+                        <PopoverBody
+                          color="black"
+                          style={{ whiteSpace: "pre-line" }}
+                        >
                           {project.moreInfo}
                         </PopoverBody>
                       </PopoverContent>
                     </Popover>
                   </Flex>
-                  {/* <Flex>
-                    {project.teck.map((ele) => (
-                      <Text key={ele} gap={1} color="white" p={1} m={1}>
-                        {ele}
-                      </Text>
-                    ))}
-                  </Flex> */}
                 </VStack>
               </GridItem>
             ))}
