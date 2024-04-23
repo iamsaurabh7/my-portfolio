@@ -1,11 +1,7 @@
 import {
   Box,
-  Button,
   Card,
   CardBody,
-  CardFooter,
-  CardHeader,
-  Flex,
   Grid,
   Heading,
   Image,
@@ -17,7 +13,7 @@ import React from "react";
 
 function Education() {
   return (
-    <Box w={"100%"}>
+    <Box w={"100%"} my={3}>
       <VStack>
         <Text color="white" m={2} p={2} as="b" fontSize="20px">
           Education
@@ -41,10 +37,10 @@ function Education() {
           >
             <Image
               objectFit="cover"
-              boxSize={["30px", "40px", "60px", "90px"]}
-              src="https://media.licdn.com/dms/image/C560BAQHtLyOBOSte_Q/company-logo_200_200/0/1631336349482?e=1707350400&v=beta&t=ptrUgOTXXZL2vHjyh5Khh5EtdujfzTlYFH7XouJGuaM"
+              boxSize={["0px", "0px", "60px", "90px"]}
+              src="https://media.licdn.com/dms/image/C560BAQHtLyOBOSte_Q/company-logo_200_200/0/1631336349482?e=1717632000&v=beta&t=-zeKydMGZZFhkZF2bdd6oRR4Oa5bHm-p0jTTXfkTPvc"
               alt="St. Xavier's College, Ranchi"
-              borderRadius={"10px"}
+              borderRadius={"7px"}
             />
 
             <Stack>
@@ -72,10 +68,10 @@ function Education() {
           >
             <Image
               objectFit="cover"
-              boxSize={["30px", "40px", "60px", "90px"]}
-              src="https://media.licdn.com/dms/image/C4D0BAQH-vND3Qt9h9g/company-logo_200_200/0/1663332671412/guru_ghasidas_university_logo?e=1707350400&v=beta&t=gCxgJhp2dMgYmxiW-C-QZDZzBj31OeC08HKj7Y9bnlU"
+              boxSize={["0px", "0px", "60px", "90px"]}
+              src="https://media.licdn.com/dms/image/C4D0BAQH-vND3Qt9h9g/company-logo_200_200/0/1663332671412/guru_ghasidas_university_logo?e=1717632000&v=beta&t=ys7MdI_Ple5TIw1FaPolFKtHG1DQ1jjwJxmy5k9uz9g"
               alt="Guru Ghasidas University"
-              borderRadius={"10px"}
+              borderRadius={"7px"}
             />{" "}
             <Stack>
               <CardBody>

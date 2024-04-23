@@ -7,15 +7,19 @@ import Skills from "./Skills";
 import Education from "./Education";
 import Contact from "./Contact";
 import "../App.css";
+import Work from "./Work";
+import Social from "./Social";
 
 function Content() {
   return (
     <Box w="100%" m={1}>
-      <VStack >
-        <Navbar  />
+      <VStack>
+        <Navbar />
         <Profile />
+        <Social />
         <Projects />
         <Skills />
+        <Work />
         <Education />
         <Contact />
       </VStack>

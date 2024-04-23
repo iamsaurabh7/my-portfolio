@@ -1,12 +1,4 @@
-import {
-  Box,
-  Flex,
-  Grid,
-  GridItem,
-  Text,
-  VStack,
-  Icon,
-} from "@chakra-ui/react";
+import { Box, Flex, Grid, GridItem, Text, VStack } from "@chakra-ui/react";
 import React from "react";
 import "./common.css";
 // import {
@@ -24,6 +16,44 @@ import "./common.css";
 
 const skillsArr = [
   {
+    title: "JavaScript",
+    icon: "",
+  },
+  {
+    title: "TypeScript",
+    icon: "",
+  },
+  {
+    title: "ReactJS",
+    icon: "",
+  },
+  {
+    title: "NodeJS",
+    icon: "",
+  },
+
+  {
+    title: "ExpressJS",
+    icon: "",
+  },
+
+  {
+    title: "MongoDB",
+    icon: "",
+  },
+  {
+    title: "Redux",
+    icon: "",
+  },
+  {
+    title: "Postman",
+    icon: "",
+  },
+  {
+    title: "Rest-API",
+    icon: "",
+  },
+  {
     title: "HTML",
     icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/800px-HTML5_logo_and_wordmark.svg.png",
   },
@@ -32,23 +62,11 @@ const skillsArr = [
     icon: "",
   },
   {
-    title: "JavaScript",
-    icon: "",
-  },
-  {
-    title: "ReactJS",
+    title: "Bootstrap",
     icon: "",
   },
   {
     title: "Chakra-UI",
-    icon: "",
-  },
-  {
-    title: "Postman",
-    icon: "",
-  },
-  {
-    title: "Bootstrap",
     icon: "",
   },
   {
@@ -59,10 +77,7 @@ const skillsArr = [
     title: "Netlify",
     icon: "",
   },
-  {
-    title: "Vercel",
-    icon: "",
-  },
+  
 ];
 
 function Skills() {

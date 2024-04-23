@@ -13,16 +13,16 @@ function Contact() {
   const [isLargerThanMd] = useMediaQuery("(min-width: 48em)");
 
   return (
-    <VStack w="100%">
+    <VStack w="100%" my={3}>
       <Text color="white" m={2} p={2} as="b" fontSize="20px">
         Contact me
       </Text>
       {isLargerThanMd ? (
         <HStack
           w="60%"
-          justifyContent="space-between"
+          justifyContent="space-around"
           align="center"
-          spacing={10}
+          // spacing={7}
         >
           <Box display="flex" alignItems="center" gap={7}>
             <Icon as={FaEnvelope} boxSize={8} color="white" />
@@ -46,6 +46,7 @@ function Contact() {
         </VStack>
       )}
       <Divider m={4} />
+      {/* <Text>Made with ❤️ Saurabh Verma </Text> */}
     </VStack>
   );
 }

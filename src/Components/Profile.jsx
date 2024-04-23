@@ -1,4 +1,4 @@
-import { Box, Flex, Image, Text } from "@chakra-ui/react";
+import { Box, Button, Flex, Image, Text, VStack } from "@chakra-ui/react";
 import React from "react";
 
 function Profile() {
@@ -8,7 +8,6 @@ function Profile() {
       bgSize="cover"
       w="100%"
       h={{ base: "120px", md: "180px" }}
-      
     >
       <Flex justifyContent="space-evenly" align="center" h="100%" gap={10}>
         <Box
@@ -21,15 +20,41 @@ function Profile() {
             alt="Profile Image"
           />
         </Box>
-        <Text
-          bg="gradientPrimary"
-          fontSize={["16px", "26px", "36px"]}
-          fontWeight="bold"
-          bgClip="text"
-          color="transparent"
-        >
-          Saurabh Verma
-        </Text>
+        <VStack>
+          <Text
+            // bg="gradientPrimary"
+            bgGradient="linear(to-b, #FF69B4, #FFD700)"
+            fontSize={["18px", "26px", "36px"]}
+            fontWeight="bold"
+            bgClip="text"
+            color="transparent"
+          >
+            Saurabh Verma
+          </Text>
+
+          <Text
+            bgGradient="linear(to-b, #FF69B4, #FFD700)"
+            fontSize={["10px", "13px", "18px"]}
+            fontWeight="bold"
+            bgClip="text"
+            color="transparent"
+          >
+            Full Stack Developer | MERN Stack Developer
+          </Text>
+          <Box>
+            <Button
+              bgColor={"rgba(178,121,216,.959)"}
+              size={["xs", "xs", "sm"]}
+            >
+              <a
+                href="https://drive.google.com/uc?id=1lUg_b_E6o9MpQMwFbNcWZ8pizXnH6Lrh"
+                download="Saurabh-Verma_Resume.pdf"
+              >
+                Download CV
+              </a>
+            </Button>
+          </Box>
+        </VStack>
       </Flex>
     </Box>
   );

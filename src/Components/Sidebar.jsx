@@ -1,5 +1,6 @@
-import { Box, Divider, Flex, Link, Text, VStack } from "@chakra-ui/react";
+import { Box, Divider, Flex, Text, VStack } from "@chakra-ui/react";
 import { FaLinkedin, FaGithub, FaHackerrank } from "react-icons/fa";
+import { SiLeetcode } from "react-icons/si";
 import React from "react";
 
 function Sidebar() {
@@ -13,6 +14,11 @@ function Sidebar() {
       title: "GitHub",
       icon: <FaGithub />,
       link: "https://github.com/iamsaurabh7",
+    },
+    {
+      title: "LeetCode",
+      icon: <SiLeetcode />,
+      link: "https://leetcode.com/iamsaurabhverma/",
     },
     {
       title: "HackerRank",
