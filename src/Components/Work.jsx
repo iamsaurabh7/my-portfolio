@@ -10,6 +10,8 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import React from "react";
+import logoDeveloperHouse from "../images/developer_house_logo.jpeg";
+import logoAvaali from "../images/avaali.jpeg";
 
 function Work() {
   return (
@@ -33,7 +35,7 @@ function Work() {
             <Image
               objectFit="cover"
               boxSize={["0px", "0px", "60px", "90px"]}
-              src="https://media.licdn.com/dms/image/C510BAQEaBMsGq9iFbA/company-logo_200_200/0/1630596600434/developer_house_logo?e=1721865600&v=beta&t=kYOZuWt7fLt-xMuUpDxwDImmeU_8DjekNVtHaYfhmMY" // Replace with your company logo URL
+              src={logoDeveloperHouse} // Replace with your company logo URL
               alt="Developer House Technology"
               borderRadius="7px"
               margin={"auto"}
@@ -69,7 +71,7 @@ function Work() {
             <Image
               objectFit="cover"
               boxSize={["0px", "0px", "60px", "90px"]}
-              src="https://media.licdn.com/dms/image/C4D0BAQH2ClGukoTGfw/company-logo_200_200/0/1631353482034?e=1721865600&v=beta&t=tK61R2Hk7i1ZrzimO_fVgvXLgEn74xM2RT_zFOk8OhI" // Replace with your company logo URL
+              src={logoAvaali}
               alt="Avaali Solutions Pvt. Ltd"
               borderRadius="7px"
               margin={"auto"}

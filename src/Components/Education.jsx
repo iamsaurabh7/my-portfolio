@@ -10,6 +10,8 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import React from "react";
+import logoXavier from "../images/xavier.jpeg";
+import logoGGU from "../images/guru_ghasidas_university_logo.jpeg";
 
 function Education() {
   return (
@@ -38,7 +40,7 @@ function Education() {
             <Image
               objectFit="cover"
               boxSize={["0px", "0px", "60px", "90px"]}
-              src="https://media.licdn.com/dms/image/C560BAQHtLyOBOSte_Q/company-logo_200_200/0/1631336349482?e=1717632000&v=beta&t=-zeKydMGZZFhkZF2bdd6oRR4Oa5bHm-p0jTTXfkTPvc"
+              src={logoXavier}
               alt="St. Xavier's College, Ranchi"
               borderRadius={"7px"}
             />
@@ -69,7 +71,7 @@ function Education() {
             <Image
               objectFit="cover"
               boxSize={["0px", "0px", "60px", "90px"]}
-              src="https://media.licdn.com/dms/image/C4D0BAQH-vND3Qt9h9g/company-logo_200_200/0/1663332671412/guru_ghasidas_university_logo?e=1717632000&v=beta&t=ys7MdI_Ple5TIw1FaPolFKtHG1DQ1jjwJxmy5k9uz9g"
+              src={logoGGU}
               alt="Guru Ghasidas University"
               borderRadius={"7px"}
             />{" "}

@@ -28,6 +28,10 @@ const skillsArr = [
     icon: "",
   },
   {
+    title: "NextJS",
+    icon: "",
+  },
+  {
     title: "NodeJS",
     icon: "",
   },
@@ -54,12 +58,8 @@ const skillsArr = [
     icon: "",
   },
   {
-    title: "HTML",
+    title: "HTML/CSS",
     icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/800px-HTML5_logo_and_wordmark.svg.png",
-  },
-  {
-    title: "CSS",
-    icon: "",
   },
   {
     title: "Bootstrap",
@@ -74,10 +74,9 @@ const skillsArr = [
     icon: "",
   },
   {
-    title: "Netlify",
+    title: "AWS",
     icon: "",
   },
-  
 ];
 
 function Skills() {
